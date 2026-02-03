@@ -1,0 +1,190 @@
+import React, { useState } from "react";
+import { useCreateTask } from "@entities/task";
+import { TaskPriority, PriorityOption } from "@entities/task/model/types";
+import styles from "./CreateTaskForm.module.scss";
+
+interface CreateTaskFormProps {
+  onSuccess?: () => void;
+  onCancel: () => void;
+}
+
+export const CreateTaskForm: React.FC<CreateTaskFormProps> = ({
+  onSuccess,
+  onCancel,
+}) => {
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [completed, setCompleted] = useState(false);
+  const [priority, setPriority] = useState<TaskPriority>("medium");
+  
+  const createTaskMutation = useCreateTask();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!title.trim()) {
+      alert("Введите заголовок задачи");
+      return;
+    }
+
+    createTaskMutation.mutate(
+      {
+        title: title.trim(),
+        description: description.trim(),
+        completed,
+        priority,
+      },
+      {
+        onSuccess: () => {
+          setTitle("");
+          setDescription("");
+          setCompleted(false);
+          setPriority("medium");
+          if (onSuccess) onSuccess();
+          // Reset form
+          const form = document.querySelector("form");
+          if (form) form.reset();
+        },
+      }
+    );
+  };
+
+  const isSubmitting = createTaskMutation.isPending;
+
+  const priorityOptions: PriorityOption[] = [
+    { value: "low", label: "Низкий", color: "#3b82f6", emoji: "🔵" },
+    { value: "medium", label: "Средний", color: "#f59e0b", emoji: "🟡" },
+    { value: "high", label: "Высокий", color: "#ef4444", emoji: "🔴" },
+  ];
+
+  return (
+    <form onSubmit={handleSubmit} className={styles.form}>
+      <div className={styles.formGroup}>
+        <label htmlFor="title" className={styles.label}>
+          Заголовок задачи *
+        </label>
+        <input
+          id="title"
+          type="text"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          className={styles.input}
+          placeholder="Например: Создать документацию"
+          disabled={isSubmitting}
+          maxLength={100}
+        />
+        <div className={styles.counter}>
+          {title.length}/100 символов
+        </div>
+      </div>
+
+      <div className={styles.formGroup}>
+        <label htmlFor="description" className={styles.label}>
+          Описание задачи
+        </label>
+        <textarea
+          id="description"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          className={styles.textarea}
+          placeholder="Подробное описание того, что нужно сделать..."
+          disabled={isSubmitting}
+          rows={5}
+          maxLength={500}
+        />
+        <div className={styles.counter}>
+          {description.length}/500 символов
+        </div>
+      </div>
+
+      <div className={styles.formGroup}>
+        <label className={styles.label}>
+          Приоритет задачи
+        </label>
+        <div className={styles.priorityOptions}>
+          {priorityOptions.map((option) => {
+            const bgColor = priority === option.value ? 
+              `${option.color}15` : "#f9fafb";
+            
+            return (
+              <label
+                key={option.value}
+                className={styles.priorityOption}
+                style={{
+                  borderColor: priority === option.value ? option.color : "#d1d5db",
+                  backgroundColor: bgColor,
+                }}
+              >
+                <input
+                  type="radio"
+                  name="priority"
+                  value={option.value}
+                  checked={priority === option.value}
+                  onChange={(e) => setPriority(e.target.value as TaskPriority)}
+                  className={styles.priorityRadio}
+                  disabled={isSubmitting}
+                />
+                <span className={styles.priorityLabel} style={{ color: option.color }}>
+                  {option.emoji} {option.label}
+                </span>
+              </label>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className={styles.formGroup}>
+        <div className={styles.checkboxGroup}>
+          <input
+            id="completed"
+            type="checkbox"
+            checked={completed}
+            onChange={(e) => setCompleted(e.target.checked)}
+            className={styles.checkbox}
+            disabled={isSubmitting}
+          />
+          <label htmlFor="completed" className={styles.checkboxLabel}>
+            Задача уже выполнена
+          </label>
+        </div>
+      </div>
+
+      <div className={styles.formFooter}>
+        <div className={styles.buttons}>
+          <button
+            type="button"
+            onClick={onCancel}
+            className={styles.cancelButton}
+            disabled={isSubmitting}
+          >
+            Отмена
+          </button>
+          <button
+            type="submit"
+            className={styles.submitButton}
+            disabled={isSubmitting || !title.trim()}
+          >
+            {isSubmitting ? (
+              <>
+                <span className={styles.spinner}></span>
+                Создание...
+              </>
+            ) : (
+              "Создать задачу"
+            )}
+          </button>
+        </div>
+        
+        <div className={styles.hint}>
+          * — обязательное поле
+        </div>
+      </div>
+      
+      {createTaskMutation.isError && (
+        <div className={styles.error}>
+          Ошибка при создании задачи: {createTaskMutation.error.message}
+        </div>
+      )}
+    </form>
+  );
+};
