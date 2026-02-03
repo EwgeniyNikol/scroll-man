@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  
+
   &:hover {
     color: #374151;
   }
@@ -51,50 +51,53 @@
 
 .meta {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.statusCompleted {
-  background: rgba(16, 185, 129, 0.9);
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.statusPending {
-  background: rgba(245, 158, 11, 0.9);
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.id, .date {
   font-size: 14px;
   opacity: 0.9;
 }
 
-.actions {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  min-width: 200px;
+.statusCompleted {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 500;
 }
+
+.statusPending {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.id,
+.date {
+  opacity: 0.8;
+}
+
 
 .markCompleteButton {
   background: #10b981;
   color: white;
   border: none;
-  padding: 10px 16px;
+  padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
-  
+  cursor: pointer;
+  transition: background-color 0.2s;
+
   &:hover:not(:disabled) {
     background: #059669;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
   }
 }
 
@@ -102,13 +105,41 @@
   background: #f59e0b;
   color: white;
   border: none;
-  padding: 10px 16px;
+  padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
-  
+  cursor: pointer;
+  transition: background-color 0.2s;
+
   &:hover:not(:disabled) {
     background: #d97706;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.editButton {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover:not(:disabled) {
+    background: #2563eb;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
   }
 }
 
@@ -116,15 +147,23 @@
   background: #ef4444;
   color: white;
   border: none;
-  padding: 10px 16px;
+  padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
-  
+  cursor: pointer;
+  transition: background-color 0.2s;
+
   &:hover:not(:disabled) {
     background: #dc2626;
   }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 }
+
 
 .details {
   padding: 32px;
@@ -135,79 +174,65 @@
   border-radius: 8px;
   padding: 24px;
   margin-bottom: 24px;
-  
-  h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    color: #1f2937;
-  }
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #374151;
 }
 
 .description {
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.6;
   color: #4b5563;
-  margin: 0;
-  max-height: 400px;
-  overflow-y: auto;
-  padding: 20px;
-  background: #f0f9ff;
-  border-radius: 12px;
-  border: 1px solid #bae6fd;
-  white-space: pre-wrap;
-  word-wrap: break-word;
 }
 
 .infoGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
 
 .infoCard {
   background: white;
-  border: 1px solid #e5e7eb;
   border-radius: 8px;
-  padding: 20px;
-  
-  h4 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    color: #1f2937;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-    li {
-      padding: 8px 0;
-      border-bottom: 1px solid #f3f4f6;
-      color: #4b5563;
-      
-      &:last-child {
-        border-bottom: none;
-      }
-      
-      strong {
-        color: #374151;
-        margin-right: 8px;
-      }
-    }
-  }
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+}
+
+.infoCard h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #374151;
+}
+
+.infoCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.infoCard li {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.infoCard strong {
+  color: #374151;
+  min-width: 100px;
 }
 
 .completedText {
   color: #10b981;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .pendingText {
   color: #f59e0b;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .actionButtons {
@@ -217,30 +242,34 @@
 }
 
 .primaryButton {
-  background: #6366f1;
+  background: #3b82f6;
   color: white;
   border: none;
-  padding: 12px 16px;
+  padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
-  
+  cursor: pointer;
+  transition: background-color 0.2s;
+
   &:hover {
-    background: #4f46e5;
+    background: #2563eb;
   }
 }
 
 .secondaryButton {
-  background: #e5e7eb;
-  color: #374151;
+  background: #9ca3af;
+  color: white;
   border: none;
-  padding: 12px 16px;
+  padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
-  
+  cursor: pointer;
+  transition: background-color 0.2s;
+
   &:hover {
-    background: #d1d5db;
+    background: #6b7280;
   }
 }
 
@@ -249,38 +278,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
-  
-  .spinner {
-    width: 50px;
-    height: 50px;
-    border: 3px solid #e5e7eb;
-    border-top-color: #6366f1;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin-bottom: 16px;
-  }
-  
-  p {
-    color: #6b7280;
-    font-size: 16px;
-  }
+  padding: 48px;
+  text-align: center;
 }
 
-.error {
-  text-align: center;
-  padding: 48px 24px;
-  
-  h2 {
-    font-size: 24px;
-    color: #1f2937;
-    margin-bottom: 12px;
-  }
-  
-  p {
-    color: #6b7280;
-    margin-bottom: 24px;
-  }
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #e5e7eb;
+  border-top-color: #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
 }
 
 @keyframes spin {
@@ -289,42 +298,65 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .header {
-    flex-direction: column;
-  }
-  
+.error {
+  text-align: center;
+  padding: 48px;
+}
+
+.error h2 {
+  color: #ef4444;
+  margin-bottom: 12px;
+}
+
+.error p {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* На мобильных - вертикально */
+@media (max-width: 768px) {
   .actions {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
   }
   
-  .infoGrid {
-    grid-template-columns: 1fr;
+  .actions button {
+    width: 100%;
   }
 }
 
-@media (max-width: 768px) {
-  .page {
-    padding: 16px;
-  }
-  
-  .header {
-    padding: 24px;
-  }
-  
-  .title {
-    font-size: 24px;
-  }
-  
-  .meta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-  
-  .details {
-    padding: 24px;
-  }
+.formWrapper {
+  width: 100%;
+  margin-top: 24px;
+  max-width: 600px;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+/* Общие стили для кнопок в actions */
+.actions button {
+  min-width: 180px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Цвета остаются индивидуальными */
+.markCompleteButton { background: #10b981; }
+.markPendingButton { background: #f59e0b; }
+.editButton { background: #3b82f6; }
+.deleteButton { background: #ef4444; }
+
+.actions button:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
