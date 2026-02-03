@@ -14,7 +14,7 @@ export const SimpleTaskList: React.FC = () => {
   } = useTasksInfiniteQuery();
 
   // Получаем все задачи из всех страниц
-  const allTasks = data?.pages.flatMap((page) => page.tasks) || [];
+  const allTasks = data?.pages.flatMap((page: any) => page.data) || [];
 
   if (isLoading && !data) {
     return (
@@ -37,10 +37,10 @@ export const SimpleTaskList: React.FC = () => {
 
   return (
     <div className={styles.simpleContainer}>
-      {allTasks.map((task, index) => (
+      {allTasks.map((task: any, index: number) => (
         <TaskCard key={task.id} task={task} index={index} />
       ))}
-      
+
       {hasNextPage && (
         <div className={styles.loadMore}>
           <button

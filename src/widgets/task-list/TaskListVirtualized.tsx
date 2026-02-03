@@ -15,7 +15,7 @@ export const TaskListVirtualized: React.FC = () => {
   } = useTasksInfiniteQuery();
 
   // Получаем все задачи из всех страниц
-  const allTasks = data?.pages.flatMap((page) => page.tasks) || [];
+  const allTasks = data?.pages.flatMap((page) => page.data) || [];
   const parentRef = useRef<HTMLDivElement>(null);
 
   // Настройка виртуализатора

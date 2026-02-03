@@ -1,0 +1,1831 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Инициализировать проект",
+      "description": "Создать базовую структуру React приложения с TypeScript",
+      "completed": true,
+      "createdAt": "2024-01-01T10:30:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "title": "Настроить маршрутизацию",
+      "description": "Добавить React Router и настроить основные маршруты",
+      "completed": true,
+      "createdAt": "2024-01-02T14:20:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "title": "Создать компонент Board",
+      "description": "Реализовать основной компонент доски задач с колонками",
+      "completed": true,
+      "createdAt": "2024-01-03T09:15:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 4,
+      "title": "Добавить drag-and-drop",
+      "description": "Интегрировать библиотеку для перетаскивания задач",
+      "completed": true,
+      "createdAt": "2024-01-04T11:45:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 5,
+      "title": "Реализовать бэкенд API",
+      "description": "Настроить json-server для обработки CRUD операций",
+      "completed": true,
+      "createdAt": "2024-01-05T16:30:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 6,
+      "title": "Интегрировать React Query",
+      "description": "Добавить TanStack Query для управления состоянием",
+      "completed": true,
+      "createdAt": "2024-01-06T13:20:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 7,
+      "title": "Написать документацию",
+      "description": "Создать README с инструкциями по запуску",
+      "completed": true,
+      "createdAt": "2024-01-07T10:10:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 8,
+      "title": "Оптимизация производительности",
+      "description": "Добавить виртуализацию компонентов",
+      "completed": false,
+      "createdAt": "2024-01-08T14:40:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 9,
+      "title": "Добавить фильтрацию",
+      "description": "Реализовать фильтры по приоритету задач",
+      "completed": false,
+      "createdAt": "2024-01-09T11:25:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 10,
+      "title": "Тестирование компонентов",
+      "description": "Написать unit-тесты для основных компонентов",
+      "completed": false,
+      "createdAt": "2024-01-10T09:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 11,
+      "title": "Адаптивная верстка",
+      "description": "Сделать интерфейс для мобильных устройств",
+      "completed": false,
+      "createdAt": "2024-01-11T15:15:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 12,
+      "title": "Добавить аутентификацию",
+      "description": "Реализовать систему входа/регистрации",
+      "completed": false,
+      "createdAt": "2024-01-12T12:30:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 13,
+      "title": "Интеграция с GitHub",
+      "description": "Настроить GitHub Actions для CI/CD",
+      "completed": false,
+      "createdAt": "2024-01-13T10:05:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 14,
+      "title": "Реализовать поиск",
+      "description": "Добавить поиск по заголовку и описанию",
+      "completed": false,
+      "createdAt": "2024-01-14T16:55:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 15,
+      "title": "Добавить уведомления",
+      "description": "Создать систему оповещений о дедлайнах",
+      "completed": false,
+      "createdAt": "2024-01-15T14:20:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 16,
+      "title": "Темная тема",
+      "description": "Реализовать переключение между темами",
+      "completed": false,
+      "createdAt": "2024-01-16T11:45:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 17,
+      "title": "Экспорт данных",
+      "description": "Добавить экспорт задач в CSV/PDF",
+      "completed": false,
+      "createdAt": "2024-01-17T09:10:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 18,
+      "title": "Статистика и аналитика",
+      "description": "Создать dashboard с графиками",
+      "completed": false,
+      "createdAt": "2024-01-18T13:35:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 19,
+      "title": "Деплой на продакшн",
+      "description": "Развернуть приложение на Vercel",
+      "completed": false,
+      "createdAt": "2024-01-19T10:50:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 20,
+      "title": "Интеграция с календарем",
+      "description": "Синхронизировать с Google Calendar",
+      "completed": false,
+      "createdAt": "2024-01-20T15:25:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 21,
+      "title": "Мультиязычность",
+      "description": "Добавить поддержку нескольких языков",
+      "completed": false,
+      "createdAt": "2024-01-21T12:40:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 22,
+      "title": "Резервное копирование",
+      "description": "Настроить автоматическое backup",
+      "completed": false,
+      "createdAt": "2024-01-22T09:05:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 23,
+      "title": "Валидация форм",
+      "description": "Улучшить валидацию форм",
+      "completed": false,
+      "createdAt": "2024-01-23T14:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 24,
+      "title": "Accessibility (a11y)",
+      "description": "Добавить ARIA атрибуты",
+      "completed": false,
+      "createdAt": "2024-01-24T11:15:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 25,
+      "title": "Финальное тестирование",
+      "description": "Провести тестирование перед релизом",
+      "completed": false,
+      "createdAt": "2024-01-25T16:30:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 26,
+      "title": "Обновить зависимости",
+      "description": "Обновить версии npm пакетов",
+      "completed": false,
+      "createdAt": "2024-01-26T13:45:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 27,
+      "title": "Написать e2e тесты",
+      "description": "Создать end-to-end тесты",
+      "completed": false,
+      "createdAt": "2024-01-27T10:20:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 28,
+      "title": "Добавить комментарии",
+      "description": "Реализовать систему комментариев к задачам",
+      "completed": false,
+      "createdAt": "2024-01-28T17:05:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 29,
+      "title": "Улучшить UI/UX",
+      "description": "Провести редизайн интерфейса",
+      "completed": false,
+      "createdAt": "2024-01-29T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 30,
+      "title": "Настроить кэширование",
+      "description": "Добавить кэш для API запросов",
+      "completed": false,
+      "createdAt": "2024-01-30T11:55:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 31,
+      "title": "Создать лендинг",
+      "description": "Разработать промо-страницу проекта",
+      "completed": false,
+      "createdAt": "2024-01-31T09:20:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 32,
+      "title": "Интеграция с Jira",
+      "description": "Синхронизировать задачи с Jira",
+      "completed": false,
+      "createdAt": "2024-02-01T15:45:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 33,
+      "title": "Добавить чат",
+      "description": "Реализовать встроенный чат для команды",
+      "completed": false,
+      "createdAt": "2024-02-02T12:10:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 34,
+      "title": "Автоматизация деплоя",
+      "description": "Настроить автоматический деплой",
+      "completed": false,
+      "createdAt": "2024-02-03T17:35:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 35,
+      "title": "Создать API документацию",
+      "description": "Написать Swagger документацию",
+      "completed": false,
+      "createdAt": "2024-02-04T14:00:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 36,
+      "title": "Добавить темы",
+      "description": "Создать несколько цветовых тем",
+      "completed": false,
+      "createdAt": "2024-02-05T11:25:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 37,
+      "title": "Настроить мониторинг",
+      "description": "Добавить логирование и мониторинг",
+      "completed": false,
+      "createdAt": "2024-02-06T16:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 38,
+      "title": "Реализовать оффлайн-режим",
+      "description": "Добавить работу без интернета",
+      "completed": false,
+      "createdAt": "2024-02-07T13:15:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 39,
+      "title": "Создать мобильное приложение",
+      "description": "Разработать React Native версию",
+      "completed": false,
+      "createdAt": "2024-02-08T10:40:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 40,
+      "title": "Добавить геймификацию",
+      "description": "Внести элементы игры в процесс",
+      "completed": false,
+      "createdAt": "2024-02-09T17:05:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 41,
+      "title": "Настроить аналитику",
+      "description": "Добавить Google Analytics",
+      "completed": false,
+      "createdAt": "2024-02-10T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 42,
+      "title": "Создать бота",
+      "description": "Разработать Telegram бота для уведомлений",
+      "completed": false,
+      "createdAt": "2024-02-11T11:55:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 43,
+      "title": "Реализовать импорт",
+      "description": "Добавить импорт задач из CSV",
+      "completed": false,
+      "createdAt": "2024-02-12T09:20:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 44,
+      "title": "Добавить теги",
+      "description": "Реализовать систему тегов для задач",
+      "completed": false,
+      "createdAt": "2024-02-13T15:45:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 45,
+      "title": "Создать шаблоны задач",
+      "description": "Добавить предустановленные шаблоны",
+      "completed": false,
+      "createdAt": "2024-02-14T12:10:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 46,
+      "title": "Настроить CDN",
+      "description": "Подключить Content Delivery Network",
+      "completed": false,
+      "createdAt": "2024-02-15T17:35:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 47,
+      "title": "Добавить голосовой ввод",
+      "description": "Реализовать создание задач голосом",
+      "completed": false,
+      "createdAt": "2024-02-16T14:00:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 48,
+      "title": "Создать REST API",
+      "description": "Разработать полноценное REST API",
+      "completed": false,
+      "createdAt": "2024-02-17T11:25:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 49,
+      "title": "Добавить WebSocket",
+      "description": "Реализовать real-time обновления",
+      "completed": false,
+      "createdAt": "2024-02-18T16:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 50,
+      "title": "Настроить нагрузочное тестирование",
+      "description": "Провести stress-тесты",
+      "completed": false,
+      "createdAt": "2024-02-19T13:15:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 51,
+      "title": "Создать PWA",
+      "description": "Преобразовать в Progressive Web App",
+      "completed": false,
+      "createdAt": "2024-02-20T10:40:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 52,
+      "title": "Добавить резюме задач",
+      "description": "Создать summary отчеты",
+      "completed": false,
+      "createdAt": "2024-02-21T17:05:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 53,
+      "title": "Реализовать календарь",
+      "description": "Добавить вид календаря для задач",
+      "completed": false,
+      "createdAt": "2024-02-22T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 54,
+      "title": "Создать диаграммы Ганта",
+      "description": "Добавить временные диаграммы",
+      "completed": false,
+      "createdAt": "2024-02-23T11:55:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 55,
+      "title": "Настроить SMS уведомления",
+      "description": "Добавить отправку SMS",
+      "completed": false,
+      "createdAt": "2024-02-24T09:20:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 56,
+      "title": "Добавить командную работу",
+      "description": "Реализовать назначение задач",
+      "completed": false,
+      "createdAt": "2024-02-25T15:45:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 57,
+      "title": "Создать roadmap",
+      "description": "Разработать roadmap проекта",
+      "completed": false,
+      "createdAt": "2024-02-26T12:10:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 58,
+      "title": "Реализовать бюджетирование",
+      "description": "Добавить финансовый модуль",
+      "completed": false,
+      "createdAt": "2024-02-27T17:35:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 59,
+      "title": "Добавить интеграцию с почтой",
+      "description": "Синхронизировать с email",
+      "completed": false,
+      "createdAt": "2024-02-28T14:00:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 60,
+      "title": "Создать систему ролей",
+      "description": "Реализовать RBAC (ролевой доступ)",
+      "completed": false,
+      "createdAt": "2024-02-29T11:25:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 61,
+      "title": "Настроить двухфакторную аутентификацию",
+      "description": "Добавить 2FA",
+      "completed": false,
+      "createdAt": "2024-03-01T16:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 62,
+      "title": "Реализовать офлайн синхронизацию",
+      "description": "Добавить sync при подключении",
+      "completed": false,
+      "createdAt": "2024-03-02T13:15:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 63,
+      "title": "Создать систему шаблонов проектов",
+      "description": "Добавить templates для проектов",
+      "completed": false,
+      "createdAt": "2024-03-03T10:40:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 64,
+      "title": "Добавить AI помощника",
+      "description": "Интегрировать ChatGPT для помощи",
+      "completed": false,
+      "createdAt": "2024-03-04T17:05:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 65,
+      "title": "Реализовать временные зоны",
+      "description": "Добавить поддержку разных timezone",
+      "completed": false,
+      "createdAt": "2024-03-05T14:30:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 66,
+      "title": "Создать систему опросов",
+      "description": "Добавить голосования в задачи",
+      "completed": false,
+      "createdAt": "2024-03-06T11:55:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 67,
+      "title": "Настроить интеграцию с Slack",
+      "description": "Добавить уведомления в Slack",
+      "completed": false,
+      "createdAt": "2024-03-07T09:20:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 68,
+      "title": "Добавить Kanban доску",
+      "description": "Реализовать Kanban представление",
+      "completed": false,
+      "createdAt": "2024-03-08T15:45:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 69,
+      "title": "Создать mind maps",
+      "description": "Добавить ментальные карты для задач",
+      "completed": false,
+      "createdAt": "2024-03-09T12:10:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 70,
+      "title": "Реализовать систему целей",
+      "description": "Добавить OKR/KPI tracking",
+      "completed": false,
+      "createdAt": "2024-03-10T17:35:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 71,
+      "title": "Настроить интеграцию с Trello",
+      "description": "Синхронизировать с Trello",
+      "completed": false,
+      "createdAt": "2024-03-11T14:00:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 72,
+      "title": "Добавить систему напоминаний",
+      "description": "Реализовать напоминания по времени",
+      "completed": false,
+      "createdAt": "2024-03-12T11:25:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 73,
+      "title": "Создать систему отчетов",
+      "description": "Генерировать автоматические отчеты",
+      "completed": false,
+      "createdAt": "2024-03-13T16:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 74,
+      "title": "Реализовать бэкап в облако",
+      "description": "Настроить backup в S3/Google Drive",
+      "completed": false,
+      "createdAt": "2024-03-14T13:15:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 75,
+      "title": "Добавить систему шаблонов отчетов",
+      "description": "Создать templates для отчетов",
+      "completed": false,
+      "createdAt": "2024-03-15T10:40:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 76,
+      "title": "Настроить интеграцию с Microsoft Teams",
+      "description": "Добавить уведомления в Teams",
+      "completed": false,
+      "createdAt": "2024-03-16T17:05:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 77,
+      "title": "Создать систему знаний",
+      "description": "Реализовать knowledge base",
+      "completed": false,
+      "createdAt": "2024-03-17T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 78,
+      "title": "Добавить интеграцию с ClickUp",
+      "description": "Синхронизировать с ClickUp",
+      "completed": false,
+      "createdAt": "2024-03-18T11:55:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 79,
+      "title": "Реализовать систему чеклистов",
+      "description": "Добавить чеклисты в задачи",
+      "completed": false,
+      "createdAt": "2024-03-19T09:20:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 80,
+      "title": "Создать систему спринтов",
+      "description": "Добавить Agile спринты",
+      "completed": false,
+      "createdAt": "2024-03-20T15:45:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 81,
+      "title": "Настроить интеграцию с Asana",
+      "description": "Синхронизировать с Asana",
+      "completed": false,
+      "createdAt": "2024-03-21T12:10:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 82,
+      "title": "Добавить систему метрик",
+      "description": "Реализовать tracking метрик",
+      "completed": false,
+      "createdAt": "2024-03-22T17:35:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 83,
+      "title": "Создать систему рейтингов",
+      "description": "Добавить рейтинги для задач",
+      "completed": false,
+      "createdAt": "2024-03-23T14:00:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 84,
+      "title": "Реализовать интеграцию с Google Sheets",
+      "description": "Синхронизировать с таблицами",
+      "completed": false,
+      "createdAt": "2024-03-24T11:25:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 85,
+      "title": "Добавить систему багов",
+      "description": "Создать bug tracking систему",
+      "completed": false,
+      "createdAt": "2024-03-25T16:50:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 86,
+      "title": "Настроить интеграцию с Zoom",
+      "description": "Добавить создание встреч Zoom",
+      "completed": false,
+      "createdAt": "2024-03-26T13:15:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 87,
+      "title": "Создать систему документов",
+      "description": "Реализовать document management",
+      "completed": false,
+      "createdAt": "2024-03-27T10:40:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 88,
+      "title": "Добавить интеграцию с Notion",
+      "description": "Синхронизировать с Notion",
+      "completed": false,
+      "createdAt": "2024-03-28T17:05:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 89,
+      "title": "Реализовать систему времени",
+      "description": "Добавить time tracking",
+      "completed": false,
+      "createdAt": "2024-03-29T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 90,
+      "title": "Создать систему инвентаря",
+      "description": "Добавить inventory management",
+      "completed": false,
+      "createdAt": "2024-03-30T11:55:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 91,
+      "title": "Настроить интеграцию с Discord",
+      "description": "Добавить уведомления в Discord",
+      "completed": false,
+      "createdAt": "2024-03-31T09:20:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 92,
+      "title": "Добавить систему файлов",
+      "description": "Реализовать file attachments",
+      "completed": false,
+      "createdAt": "2024-04-01T15:45:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 93,
+      "title": "Создать систему отпусков",
+      "description": "Добавить vacation/leave tracking",
+      "completed": false,
+      "createdAt": "2024-04-02T12:10:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 94,
+      "title": "Реализовать интеграцию с PayPal",
+      "description": "Добавить платежи через PayPal",
+      "completed": false,
+      "createdAt": "2024-04-03T17:35:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 95,
+      "title": "Добавить систему обучения",
+      "description": "Создать training materials",
+      "completed": false,
+      "createdAt": "2024-04-04T14:00:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 96,
+      "title": "Настроить интеграцию с Stripe",
+      "description": "Добавить платежи через Stripe",
+      "completed": false,
+      "createdAt": "2024-04-05T11:25:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 97,
+      "title": "Создать систему обратной связи",
+      "description": "Реализовать feedback collection",
+      "completed": false,
+      "createdAt": "2024-04-06T16:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 98,
+      "title": "Добавить систему наград",
+      "description": "Реализовать rewards system",
+      "completed": false,
+      "createdAt": "2024-04-07T13:15:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 99,
+      "title": "Реализовать интеграцию с AWS",
+      "description": "Настроить AWS сервисы",
+      "completed": false,
+      "createdAt": "2024-04-08T10:40:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 100,
+      "title": "Создать финальную документацию",
+      "description": "Завершить полную документацию",
+      "completed": false,
+      "createdAt": "2024-04-09T17:05:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 101,
+      "title": "Разработать систему квот",
+      "description": "Реализовать лимиты и квоты для пользователей",
+      "completed": false,
+      "createdAt": "2024-04-10T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 102,
+      "title": "Интеграция с Bitbucket",
+      "description": "Синхронизировать с Bitbucket репозиториями",
+      "completed": false,
+      "createdAt": "2024-04-11T11:55:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 103,
+      "title": "Добавить систему версий",
+      "description": "Реализовать version control для задач",
+      "completed": false,
+      "createdAt": "2024-04-12T09:20:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 104,
+      "title": "Создать систему аудита",
+      "description": "Добавить логирование действий пользователей",
+      "completed": false,
+      "createdAt": "2024-04-13T15:45:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 105,
+      "title": "Настроить интеграцию с GitLab",
+      "description": "Синхронизировать с GitLab CI/CD",
+      "completed": false,
+      "createdAt": "2024-04-14T12:10:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 106,
+      "title": "Реализовать систему очередей",
+      "description": "Добавить task queue processing",
+      "completed": false,
+      "createdAt": "2024-04-15T17:35:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 107,
+      "title": "Добавить систему скриншотов",
+      "description": "Реализовать прикрепление скриншотов",
+      "completed": false,
+      "createdAt": "2024-04-16T14:00:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 108,
+      "title": "Создать систему бейджей",
+      "description": "Добавить achievement badges",
+      "completed": false,
+      "createdAt": "2024-04-17T11:25:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 109,
+      "title": "Настроить интеграцию с Dropbox",
+      "description": "Синхронизировать с Dropbox файлами",
+      "completed": false,
+      "createdAt": "2024-04-18T16:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 110,
+      "title": "Реализовать систему ретроспектив",
+      "description": "Добавить retrospective meetings",
+      "completed": false,
+      "createdAt": "2024-04-19T13:15:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 111,
+      "title": "Добавить систему видео",
+      "description": "Реализовать video attachments",
+      "completed": false,
+      "createdAt": "2024-04-20T10:40:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 112,
+      "title": "Создать систему workflow",
+      "description": "Добавить custom workflows",
+      "completed": false,
+      "createdAt": "2024-04-21T17:05:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 113,
+      "title": "Настроить интеграцию с OneDrive",
+      "description": "Синхронизировать с OneDrive",
+      "completed": false,
+      "createdAt": "2024-04-22T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 114,
+      "title": "Реализовать систему мозговых штурмов",
+      "description": "Добавить brainstorming tools",
+      "completed": false,
+      "createdAt": "2024-04-23T11:55:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 115,
+      "title": "Добавить систему голосования",
+      "description": "Реализовать voting на задачи",
+      "completed": false,
+      "createdAt": "2024-04-24T09:20:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 116,
+      "title": "Создать систему ресурсов",
+      "description": "Добавить resource management",
+      "completed": false,
+      "createdAt": "2024-04-25T15:45:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 117,
+      "title": "Настроить интеграцию с Figma",
+      "description": "Синхронизировать с Figma designs",
+      "completed": false,
+      "createdAt": "2024-04-26T12:10:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 118,
+      "title": "Реализовать систему зависимостей",
+      "description": "Добавить task dependencies",
+      "completed": false,
+      "createdAt": "2024-04-27T17:35:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 119,
+      "title": "Добавить систему аудио",
+      "description": "Реализовать audio recordings",
+      "completed": false,
+      "createdAt": "2024-04-28T14:00:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 120,
+      "title": "Создать систему портфелей",
+      "description": "Добавить portfolio management",
+      "completed": false,
+      "createdAt": "2024-04-29T11:25:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 121,
+      "title": "Настроить интеграцию с Miro",
+      "description": "Синхронизировать с Miro boards",
+      "completed": false,
+      "createdAt": "2024-04-30T16:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 122,
+      "title": "Реализовать систему рисков",
+      "description": "Добавить risk management",
+      "completed": false,
+      "createdAt": "2024-05-01T13:15:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 123,
+      "title": "Добавить систему геолокации",
+      "description": "Реализовать location-based tasks",
+      "completed": false,
+      "createdAt": "2024-05-02T10:40:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 124,
+      "title": "Создать систему клиентов",
+      "description": "Добавить client management",
+      "completed": false,
+      "createdAt": "2024-05-03T17:05:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 125,
+      "title": "Настроить интеграцию с Confluence",
+      "description": "Синхронизировать с Confluence",
+      "completed": false,
+      "createdAt": "2024-05-04T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 126,
+      "title": "Реализовать систему качества",
+      "description": "Добавить quality assurance",
+      "completed": false,
+      "createdAt": "2024-05-05T11:55:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 127,
+      "title": "Добавить систему сканирования",
+      "description": "Реализовать QR/barcode scanning",
+      "completed": false,
+      "createdAt": "2024-05-06T09:20:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 128,
+      "title": "Создать систему проектов",
+      "description": "Добавить project management",
+      "completed": false,
+      "createdAt": "2024-05-07T15:45:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 129,
+      "title": "Настроить интеграцию с Azure DevOps",
+      "description": "Синхронизировать с Azure",
+      "completed": false,
+      "createdAt": "2024-05-08T12:10:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 130,
+      "title": "Реализовать систему изменений",
+      "description": "Добавить change management",
+      "completed": false,
+      "createdAt": "2024-05-09T17:35:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 131,
+      "title": "Добавить систему OCR",
+      "description": "Реализовать text recognition",
+      "completed": false,
+      "createdAt": "2024-05-10T14:00:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 132,
+      "title": "Создать систему активов",
+      "description": "Добавить asset management",
+      "completed": false,
+      "createdAt": "2024-05-11T11:25:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 133,
+      "title": "Настроить интеграцию с Salesforce",
+      "description": "Синхронизировать с Salesforce",
+      "completed": false,
+      "createdAt": "2024-05-12T16:50:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 134,
+      "title": "Реализовать систему инцидентов",
+      "description": "Добавить incident management",
+      "completed": false,
+      "createdAt": "2024-05-13T13:15:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 135,
+      "title": "Добавить систему распознавания",
+      "description": "Реализовать image recognition",
+      "completed": false,
+      "createdAt": "2024-05-14T10:40:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 136,
+      "title": "Создать систему контрактов",
+      "description": "Добавить contract management",
+      "completed": false,
+      "createdAt": "2024-05-15T17:05:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 137,
+      "title": "Настроить интеграцию с HubSpot",
+      "description": "Синхронизировать с HubSpot CRM",
+      "completed": false,
+      "createdAt": "2024-05-16T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 138,
+      "title": "Реализовать систему проблем",
+      "description": "Добавить problem management",
+      "completed": false,
+      "createdAt": "2024-05-17T11:55:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 139,
+      "title": "Добавить систему сканирования сети",
+      "description": "Реализовать network scanning",
+      "completed": false,
+      "createdAt": "2024-05-18T09:20:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 140,
+      "title": "Создать систему закупок",
+      "description": "Добавить procurement management",
+      "completed": false,
+      "createdAt": "2024-05-19T15:45:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 141,
+      "title": "Настроить интеграцию с Zendesk",
+      "description": "Синхронизировать с Zendesk",
+      "completed": false,
+      "createdAt": "2024-05-20T12:10:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 142,
+      "title": "Реализовать систему сервисов",
+      "description": "Добавить service management",
+      "completed": false,
+      "createdAt": "2024-05-21T17:35:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 143,
+      "title": "Добавить систему мониторинга сети",
+      "description": "Реализовать network monitoring",
+      "completed": false,
+      "createdAt": "2024-05-22T14:00:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 144,
+      "title": "Создать систему логистики",
+      "description": "Добавить logistics management",
+      "completed": false,
+      "createdAt": "2024-05-23T11:25:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 145,
+      "title": "Настроить интеграцию с Freshdesk",
+      "description": "Синхронизировать с Freshdesk",
+      "completed": false,
+      "createdAt": "2024-05-24T16:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 146,
+      "title": "Реализовать систему ИТ-активов",
+      "description": "Добавить IT asset management",
+      "completed": false,
+      "createdAt": "2024-05-25T13:15:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 147,
+      "title": "Добавить систему безопасности",
+      "description": "Реализовать security scanning",
+      "completed": false,
+      "createdAt": "2024-05-26T10:40:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 148,
+      "title": "Создать систему человеческих ресурсов",
+      "description": "Добавить HR management",
+      "completed": false,
+      "createdAt": "2024-05-27T17:05:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 149,
+      "title": "Настроить интеграцию с Intercom",
+      "description": "Синхронизировать с Intercom",
+      "completed": false,
+      "createdAt": "2024-05-28T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 150,
+      "title": "Реализовать систему знаний ИИ",
+      "description": "Добавить AI knowledge base",
+      "completed": false,
+      "createdAt": "2024-05-29T11:55:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 151,
+      "title": "Добавить систему пентеста",
+      "description": "Реализовать penetration testing",
+      "completed": false,
+      "createdAt": "2024-05-30T09:20:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 152,
+      "title": "Создать систему комплаенс",
+      "description": "Добавить compliance management",
+      "completed": false,
+      "createdAt": "2024-05-31T15:45:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 153,
+      "title": "Настроить интеграцию с Mailchimp",
+      "description": "Синхронизировать с Mailchimp",
+      "completed": false,
+      "createdAt": "2024-06-01T12:10:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 154,
+      "title": "Реализовать систему машинного обучения",
+      "description": "Добавить ML models",
+      "completed": false,
+      "createdAt": "2024-06-02T17:35:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 155,
+      "title": "Добавить систему анализа кода",
+      "description": "Реализовать code analysis",
+      "completed": false,
+      "createdAt": "2024-06-03T14:00:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 156,
+      "title": "Создать систему управления доступом",
+      "description": "Добавить access management",
+      "completed": false,
+      "createdAt": "2024-06-04T11:25:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 157,
+      "title": "Настроить интеграцию с Calendly",
+      "description": "Синхронизировать с Calendly",
+      "completed": false,
+      "createdAt": "2024-06-05T16:50:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 158,
+      "title": "Реализовать систему данных",
+      "description": "Добавить data management",
+      "completed": false,
+      "createdAt": "2024-06-06T13:15:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 159,
+      "title": "Добавить систему статического анализа",
+      "description": "Реализовать static analysis",
+      "completed": false,
+      "createdAt": "2024-06-07T10:40:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 160,
+      "title": "Создать систему бизнес-процессов",
+      "description": "Добавить business process management",
+      "completed": false,
+      "createdAt": "2024-06-08T17:05:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 161,
+      "title": "Настроить интеграцию с Typeform",
+      "description": "Синхронизировать с Typeform",
+      "completed": false,
+      "createdAt": "2024-06-09T14:30:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 162,
+      "title": "Реализовать систему аналитики данных",
+      "description": "Добавить data analytics",
+      "completed": false,
+      "createdAt": "2024-06-10T11:55:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 163,
+      "title": "Добавить систему динамического анализа",
+      "description": "Реализовать dynamic analysis",
+      "completed": false,
+      "createdAt": "2024-06-11T09:20:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 164,
+      "title": "Создать систему управления продуктом",
+      "description": "Добавить product management",
+      "completed": false,
+      "createdAt": "2024-06-12T15:45:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 165,
+      "title": "Настроить интеграцию с Airtable",
+      "description": "Синхронизировать с Airtable",
+      "completed": false,
+      "createdAt": "2024-06-13T12:10:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 166,
+      "title": "Реализовать систему бизнес-аналитики",
+      "description": "Добавить business intelligence",
+      "completed": false,
+      "createdAt": "2024-06-14T17:35:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 167,
+      "title": "Добавить систему тестирования безопасности",
+      "description": "Реализовать security testing",
+      "completed": false,
+      "createdAt": "2024-06-15T14:00:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 168,
+      "title": "Создать систему управления требованиями",
+      "description": "Добавить requirements management",
+      "completed": false,
+      "createdAt": "2024-06-16T11:25:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 169,
+      "title": "Настроить интеграцию с Monday.com",
+      "description": "Синхронизировать с Monday.com",
+      "completed": false,
+      "createdAt": "2024-06-17T16:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 170,
+      "title": "Реализовать систему управления данными",
+      "description": "Добавить master data management",
+      "completed": false,
+      "createdAt": "2024-06-18T13:15:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 171,
+      "title": "Добавить систему нагрузочного тестирования",
+      "description": "Реализовать load testing",
+      "completed": false,
+      "createdAt": "2024-06-19T10:40:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 172,
+      "title": "Создать систему управления архитектурой",
+      "description": "Добавить architecture management",
+      "completed": false,
+      "createdAt": "2024-06-20T17:05:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 173,
+      "title": "Настроить интеграцию с Smartsheet",
+      "description": "Синхронизировать с Smartsheet",
+      "completed": false,
+      "createdAt": "2024-06-21T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 174,
+      "title": "Реализовать систему управления метаданными",
+      "description": "Добавить metadata management",
+      "completed": false,
+      "createdAt": "2024-06-22T11:55:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 175,
+      "title": "Добавить систему тестирования API",
+      "description": "Реализовать API testing",
+      "completed": false,
+      "createdAt": "2024-06-23T09:20:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 176,
+      "title": "Создать систему управления контентом",
+      "description": "Добавить content management",
+      "completed": false,
+      "createdAt": "2024-06-24T15:45:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 177,
+      "title": "Настроить интеграцию с Wrike",
+      "description": "Синхронизировать с Wrike",
+      "completed": false,
+      "createdAt": "2024-06-25T12:10:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 178,
+      "title": "Реализовать систему управления цифровыми активами",
+      "description": "Добавить digital asset management",
+      "completed": false,
+      "createdAt": "2024-06-26T17:35:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 179,
+      "title": "Добавить систему тестирования интерфейса",
+      "description": "Реализовать UI testing",
+      "completed": false,
+      "createdAt": "2024-06-27T14:00:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 180,
+      "title": "Создать систему управления взаимоотношениями",
+      "description": "Добавить relationship management",
+      "completed": false,
+      "createdAt": "2024-06-28T11:25:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 181,
+      "title": "Настроить интеграцию с Basecamp",
+      "description": "Синхронизировать с Basecamp",
+      "completed": false,
+      "createdAt": "2024-06-29T16:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 182,
+      "title": "Реализовать систему управления документами",
+      "description": "Добавить enterprise content management",
+      "completed": false,
+      "createdAt": "2024-06-30T13:15:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 183,
+      "title": "Добавить систему тестирования базы данных",
+      "description": "Реализовать database testing",
+      "completed": false,
+      "createdAt": "2024-07-01T10:40:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 184,
+      "title": "Создать систему управления инновациями",
+      "description": "Добавить innovation management",
+      "completed": false,
+      "createdAt": "2024-07-02T17:05:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 185,
+      "title": "Настроить интеграцию с Teamwork",
+      "description": "Синхронизировать с Teamwork",
+      "completed": false,
+      "createdAt": "2024-07-03T14:30:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 186,
+      "title": "Реализовать систему управления записями",
+      "description": "Добавить records management",
+      "completed": false,
+      "createdAt": "2024-07-04T11:55:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 187,
+      "title": "Добавить систему тестирования производительности",
+      "description": "Реализовать performance testing",
+      "completed": false,
+      "createdAt": "2024-07-05T09:20:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 188,
+      "title": "Создать систему управления устойчивостью",
+      "description": "Добавить sustainability management",
+      "completed": false,
+      "createdAt": "2024-07-06T15:45:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 189,
+      "title": "Настроить интеграцию с ProofHub",
+      "description": "Синхронизировать с ProofHub",
+      "completed": false,
+      "createdAt": "2024-07-07T12:10:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 190,
+      "title": "Реализовать систему управления обучением",
+      "description": "Добавить learning management",
+      "completed": false,
+      "createdAt": "2024-07-08T17:35:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 191,
+      "title": "Добавить систему тестирования доступности",
+      "description": "Реализовать accessibility testing",
+      "completed": false,
+      "createdAt": "2024-07-09T14:00:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 192,
+      "title": "Создать систему управления репутацией",
+      "description": "Добавить reputation management",
+      "completed": false,
+      "createdAt": "2024-07-10T11:25:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 193,
+      "title": "Настроить интеграцию с Redmine",
+      "description": "Синхронизировать с Redmine",
+      "completed": false,
+      "createdAt": "2024-07-11T16:50:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 194,
+      "title": "Реализовать систему управления талантами",
+      "description": "Добавить talent management",
+      "completed": false,
+      "createdAt": "2024-07-12T13:15:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 195,
+      "title": "Добавить систему тестирования совместимости",
+      "description": "Реализовать compatibility testing",
+      "completed": false,
+      "createdAt": "2024-07-13T10:40:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 196,
+      "title": "Создать систему управления брендом",
+      "description": "Добавить brand management",
+      "completed": false,
+      "createdAt": "2024-07-14T17:05:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "id": 197,
+      "title": "Настроить интеграцию с Toggl",
+      "description": "Синхронизировать с Toggl Track",
+      "completed": false,
+      "createdAt": "2024-07-15T14:30:00Z",
+      "userId": 1,
+      "priority": "low"
+    },
+    {
+      "id": 198,
+      "title": "Реализовать систему управления коммуникациями",
+      "description": "Добавить communications management",
+      "completed": false,
+      "createdAt": "2024-07-16T11:55:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 199,
+      "title": "Добавить систему тестирования локализации",
+      "description": "Реализовать localization testing",
+      "completed": false,
+      "createdAt": "2024-07-17T09:20:00Z",
+      "userId": 1,
+      "priority": "medium"
+    },
+    {
+      "id": 200,
+      "title": "Создать систему управления экосистемой",
+      "description": "Добавить ecosystem management",
+      "completed": false,
+      "createdAt": "2024-07-18T15:45:00Z",
+      "userId": 1,
+      "priority": "high"
+    },
+    {
+      "title": "Убрать снег",
+      "description": "Убрать снег с парковки и крыльца!",
+      "completed": false,
+      "priority": "high",
+      "createdAt": "2026-02-02T11:15:11.376Z",
+      "userId": 1,
+      "id": 201
+    },
+    {
+      "title": "почистить память",
+      "description": "почисть ОЗУ",
+      "completed": false,
+      "priority": "low",
+      "createdAt": "2026-02-02T12:08:58.489Z",
+      "userId": 1,
+      "id": 202
+    },
+    {
+      "title": "Купить хлеб",
+      "description": "Купить хлеб в супермакркете.",
+      "completed": false,
+      "priority": "low",
+      "createdAt": "2026-02-02T12:33:47.780Z",
+      "userId": 1,
+      "id": 203
+    }
+  ]
+}

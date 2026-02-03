@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useTaskQuery, useDeleteTask, useUpdateTask } from "@entities/task";
 import { TaskEditForm } from "@features/task-edit";
@@ -8,7 +8,8 @@ export const TaskDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const taskId = parseInt(id || "0");
-  
+  const [isEditing, setIsEditing] = useState(false);
+
   const { data: task, isLoading, error } = useTaskQuery(taskId);
   const deleteMutation = useDeleteTask();
   const updateMutation = useUpdateTask();
@@ -17,7 +18,7 @@ export const TaskDetailsPage: React.FC = () => {
     if (task) {
       updateMutation.mutate({
         id: task.id,
-        completed: !task.completed,
+        task: { completed: !task.completed },
       });
     }
   };
@@ -67,7 +68,7 @@ export const TaskDetailsPage: React.FC = () => {
       <button onClick={() => navigate(-1)} className={styles.backButton}>
         ← Назад
       </button>
-      
+
       <div className={styles.content}>
         <div className={styles.header}>
           <div className={styles.titleSection}>
@@ -82,19 +83,34 @@ export const TaskDetailsPage: React.FC = () => {
               </span>
             </div>
           </div>
-          
+
           <div className={styles.actions}>
             <button
               onClick={handleToggleComplete}
               className={task.completed ? styles.markPendingButton : styles.markCompleteButton}
               disabled={updateMutation.isPending}
             >
-              {updateMutation.isPending ? "Обновление..." : 
+              {updateMutation.isPending ? "Обновление..." :
                task.completed ? "Отметить как невыполненную" : "Отметить как выполненную"}
             </button>
-            
-            <TaskEditForm task={task} />
-            
+
+            {isEditing ? (
+              <div className={styles.editFormContainer}>
+                <TaskEditForm 
+                  task={task} 
+                  onCancel={() => setIsEditing(false)}
+                  onSuccess={() => setIsEditing(false)}
+                />
+              </div>
+            ) : (
+              <button
+                onClick={() => setIsEditing(true)}
+                className={styles.editButton}
+              >
+                Редактировать
+              </button>
+            )}
+
             <button
               onClick={handleDelete}
               className={styles.deleteButton}
@@ -104,13 +120,13 @@ export const TaskDetailsPage: React.FC = () => {
             </button>
           </div>
         </div>
-        
+
         <div className={styles.details}>
           <div className={styles.card}>
             <h3>Описание</h3>
             <p className={styles.description}>{task.description}</p>
           </div>
-          
+
           <div className={styles.infoGrid}>
             <div className={styles.infoCard}>
               <h4>Информация о задаче</h4>
@@ -132,7 +148,7 @@ export const TaskDetailsPage: React.FC = () => {
                 </li>
               </ul>
             </div>
-            
+
             <div className={styles.infoCard}>
               <h4>Действия</h4>
               <div className={styles.actionButtons}>
