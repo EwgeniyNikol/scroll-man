@@ -90,3 +90,54 @@ task-manager/
 
 ## 📝 Лицензия
 MIT
+## 🛠️ Технологии
+
+- **React 18** + **TypeScript** - основной стек
+- **TanStack Query v5** - управление состоянием и кэширование
+- **SASS/SCSS Modules** - модульные стили
+- **Feature-Sliced Design** - архитектура проекта
+- **JSON Server** - mock API бэкенд
+## 📁 Архитектура (Feature-Sliced Design)
+\`\`\`
+src/
+├── app/          # Инициализация приложения, провайдеры, роутинг
+├── pages/        # Страницы (Главная, Детали задачи)
+├── widgets/      # Сложные UI виджеты (Список задач)
+├── features/     # Бизнес-фичи (создание, редактирование, удаление)
+├── entities/     # Бизнес-сущности (Модель задачи, API)
+└── shared/       # Общие компоненты, утилиты, стили
+\`\`\`
+
+## ✅ Функциональность
+
+- **Полный CRUD** - Создание, чтение, обновление, удаление задач
+- **Бесконечный скролл** с виртуализацией для производительности
+- **Отдельные страницы задач** с React Router
+- **Адаптивный дизайн** с поддержкой темной/светлой темы
+
+## 📦 Доступные скрипты
+
+- \`npm run dev:full\` - Запуск фронтенда и бэкенда вместе
+- \`npm run dev\` - Только фронтенд (Vite)
+- \`npm run backend\` - Только бэкенд (JSON Server)
+- \`npm run build\` - Сборка для production
+- \`npm run preview\` - Превью production сборки
+
+## 🔧 Решение проблем
+
+Если порты заняты:
+\`\`\`bash
+PORT=5174 API_PORT=3004 npm run dev:full
+\`\`\`
+
+## 🌐 Демо
+
+- **Фронтенд**: http://localhost:5173
+- **API**: http://localhost:3003/tasks
+
+## 📄 Документация
+
+- [React](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org)
+- [TanStack Query](https://tanstack.com/query/latest)
+- [Feature-Sliced Design](https://feature-sliced.design)
